@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f9fafb;
+  color: #333;
+}
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #fff;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar .logo img {
+  max-width: 40px;
+  height: auto;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.sidebar nav ul li {
+  margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.sidebar nav ul li.active a {
+  color: #0056b3;
+}
+
+.sidebar .logout {
+  margin-top: auto;
+}
+
+/* Main */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-actions .icon {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.header-actions .profile {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+/* Chamado Box */
+.chamado-box {
+  background: #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 800px;
+}
+
+.chamado-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.chamado-header .back {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.chamado-header h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.chamado-header .status.blue {
+  color: #2563eb;
+  font-size: 14px;
+}
+
+.chamado-header .problema {
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.chamado-header .descricao {
+  font-size: 14px;
+  color: #555;
+}
+
+.chamado-info p {
+  margin: 10px 0;
+}
+
+.chamado-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-green {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-green:hover {
+  background: #15803d;
+}

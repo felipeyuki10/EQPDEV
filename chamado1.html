@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamado #1234 - Case Flow</title>
+  <link rel="stylesheet" href="chamado1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="images/logo.jpeg" alt="Logo Case flow">
+        <span>Case flow</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">IA Agent</a></li>
+          <li class="active"><a href="#">Chamados</a></li>
+          <li><a href="#">Configurações</a></li>
+        </ul>
+      </nav>
+
+      <div class="logout">
+        <a href="#">Log out</a>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main-content">
+      <div class="header">
+        <input type="text" placeholder="Search">
+        <div class="header-actions">
+          <span class="icon">🔔</span>
+          <span class="icon">❓</span>
+          <img class="profile" src="https://via.placeholder.com/32" alt="Usuário">
+        </div>
+      </div>
+
+      <h2>Chamados</h2>
+
+      <section class="chamado-box">
+        <div class="chamado-header">
+          <span class="back">←</span>
+          <div>
+            <h3>Chamado #1234 <span class="status blue">TI</span></h3>
+            <p class="problema">Problema na internet</p>
+            <p class="descricao">
+              A internet do departamento de TI não está funcionando corretamente. Favor olhar.
+            </p>
+          </div>
+        </div>
+
+        <div class="chamado-info">
+          <p><strong>Nome do emissor:</strong><br>Ronieli Camargo</p>
+          <p><strong>Data de abertura:</strong><br>13/09/2025</p>
+        </div>
+
+        <div class="chamado-actions">
+          <button class="btn-green">Aceitar chamado</button>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

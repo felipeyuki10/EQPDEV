@@ -1,0 +1,111 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container principal */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Header (logo + título) */
+.login-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-header h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Logo */
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
+/* Card */
+.login-card {
+  background: #f1f5f9;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.login-card h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  text-align: left;
+  font-size: 14px;
+  color: #374151;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.forgot-password {
+  text-align: left;
+  font-size: 12px;
+  color: #6b7280;
+  text-decoration: none;
+  margin-top: -5px;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Botão */
+button {
+  background: #0a4ea3;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #083d80;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* faz o <a> ocupar toda a largura */
+}

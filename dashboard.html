@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case flow - Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="images/logo.jpeg" alt="Logo Case flow">
+        <h2>Case flow</h2>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">IA Agent</a></li>
+          <li class="active"><a href="#">Chamados</a></li>
+          <li><a href="#">Configurações</a></li>
+        </ul>
+      </nav>
+      <div class="logout">
+        <a href="#">⇦ Log out</a>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main-content">
+      <header class="header">
+        <input type="text" placeholder="Search">
+        <div class="header-actions">
+          <span class="icon">🔔</span>
+          <span class="icon">👤</span>
+          <span class="dropdown">Essa semana ▼</span>
+        </div>
+      </header>
+
+      <h1>Chamados</h1>
+
+      <!-- Kanban board -->
+      <div class="kanban">
+        
+        <!-- Coluna A fazer -->
+        <div class="kanban-column">
+          <div class="kanban-title">
+            <h2>A fazer</h2>
+            <span>+</span>
+          </div>
+          <a href="chamado1.html" class="card-link"></a>
+          <div class="card">
+  <span class="status blue">● Aberto</span>
+  <h3>
+    <a href="chamado1.html">Problema na internet</a>
+  </h3>
+  <p>A internet do departamento de TI não está funcionando corretamente. Favor olhar.</p>
+  <a href="#">Aceitar</a>
+</div>
+1
+          <div class="card">
+            <span class="status blue">● Aberto</span>
+            <h3>Mau funcionamento na impressora</h3>
+            <p>A impressora do RH não está funcionando de maneira correta. Favor verificar.</p>
+            <a href="#">Aceitar</a>
+          </div>
+        </div>
+
+        <!-- Coluna Em progresso -->
+        <div class="kanban-column">
+          <div class="kanban-title">
+            <h2>Em progresso</h2>
+            <span>+</span>
+          </div>
+          <div class="card">
+            <span class="status yellow">● Desenvolvimento</span>
+            <h3>Correção de bugs na tela de login</h3>
+            <p>Ao clicar em registrar novo usuário a nova página não estava sendo carregada.</p>
+          </div>
+        </div>
+
+        <!-- Coluna Finalizados -->
+        <div class="kanban-column">
+          <div class="kanban-title">
+            <h2>Finalizados</h2>
+            <span>+</span>
+          </div>
+          <div class="card">
+            <span class="status green">● Finalizado</span>
+            <h3>Ajuste de bugs no código CSS</h3>
+            <p>O arquivo de texto estava sobrepondo a outro devido a uma falha do CSS.</p>
+          </div>
+          <div class="card">
+            <span class="status green">● Finalizado</span>
+            <h3>Erro no envio de email</h3>
+            <p>Ao tentar enviar um email para uma empresa parceira foi constatado que o email não foi enviado.</p>
+          </div>
+          <div class="card">
+            <span class="status green">● Finalizado</span>
+            <h3>Design responsivo</h3>
+            <p>Foi verificado que o design não estava com a devida responsividade em outros dispositivos.</p>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>
